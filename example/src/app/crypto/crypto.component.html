@@ -1,0 +1,9 @@
+<li *ngFor="let balance of crypto" class="list-group-item list-group-item-info" style="color: black; margin-top: 10%; text-align: center;" (click)="onClick(balance.id)">
+    <h2>{{ balance.name }}</h2>
+    <img style="width: 12%; text-align: left;" src="{{ balance.image.large }}">
+    <div id="crypto_infos" style="font-size: 1.5vw;">
+        <p id="price"> One {{ balance.name }} costs : {{ balance.market_data.current_price.eur }} €</p>
+        <p id="price_variation_24h" style="color: red;" *ngIf="balance.price_change_24h < 0">{{ balance.name }} lost {{ balance.price_change_24h }}</p>
+        <p id="price_variation_24h" style="color: green;" *ngIf="balance.price_change_24h > 0">{{ balance.name }} gained {{ balance.price_change_24h }}</p>
+    </div>
+</li>
