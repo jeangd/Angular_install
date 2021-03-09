@@ -1,8 +1,5 @@
-# Angular_install
-###### update and upgrade your computer
-###### Install nmp
-###### Install Angular8
-###### Install angular-lz-string
+# Angular
+###### Install angular: ```./install/ubuntu_install_angular.sh```
 ######
 ###### To create an Angular Project: ```ng new Project_Name```
 ###### ```npm install rxjs-compat --save```
