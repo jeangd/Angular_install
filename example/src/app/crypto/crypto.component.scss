@@ -1,0 +1,78 @@
+h4
+{
+  font-size: 30px;
+}
+
+.list-group-item
+{
+    background-color: white !important;
+    border: none;
+}
+
+.card
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  opacity: 1;
+  justify-content: center;
+  cursor: pointer;
+  border: solid rgba(0, 0, 0, 0);
+}
+
+p
+{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.titlesize
+{
+  font-size: 22px;
+}
+
+.textsize
+{
+  font-size: 16px;
+}
+
+.cardsearch
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    justify-content: center;
+    border: solid rgba(0, 0, 0, 0);
+}
+
+.inputcost
+{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    border: 0px;
+    font-size: 17px;
+    width: 90%;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    color: black;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1580px) {
+  .titlesize {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .textsize {
+    margin-left: 2px;
+    font-size: 12px;
+  }
+}

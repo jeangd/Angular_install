@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,400i,600,700,800');
+
+* {
+    font-family: 'Muli', sans-serif;
+}
+
+body
+{
+  background-color: #F0F3F0 !important;
+}
+
+.labeladd
+{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.modal-title
+{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.modal-header
+{
+  border-radius: 25px 25px 0px 0px !important;
+  background: transparent linear-gradient(98deg, #36EB7E 0%, #169A8E 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.modal-body
+{
+  border-radius: 0px 0px 25px 25px !important;
+}
+
+.modal-content
+{
+  border: 0 !important;
+  border-radius: 25px !important;
+}
+
+.champ
+{
+  background-color: white;
+  border: 0px;
+  border-radius: 15px;
+  height: 60px;
+}
+
+input[type=email], input[type=date], input[type=text], input[type=password], input[type=tel], input[type=number] {
+  height: 60px;
+  border-radius: 15px;
+  width: 100%;
+  border: 0px;
+}
+
+.bg-grey {
+    background-color: #f1f3f0;
+}

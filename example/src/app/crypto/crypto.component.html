@@ -1,9 +1,29 @@
-<li *ngFor="let balance of crypto" class="list-group-item list-group-item-info" style="color: black; margin-top: 10%; text-align: center;" (click)="onClick(balance.id)">
-    <h2>{{ balance.name }}</h2>
-    <img style="width: 12%; text-align: left;" src="{{ balance.image.large }}">
-    <div id="crypto_infos" style="font-size: 1.5vw;">
-        <p id="price"> One {{ balance.name }} costs : {{ balance.market_data.current_price.eur }} €</p>
-        <p id="price_variation_24h" style="color: red;" *ngIf="balance.price_change_24h < 0">{{ balance.name }} lost {{ balance.price_change_24h }}</p>
-        <p id="price_variation_24h" style="color: green;" *ngIf="balance.price_change_24h > 0">{{ balance.name }} gained {{ balance.price_change_24h }}</p>
+<div class="offset-xl-1 col-12 col-xl-10 mt-5 text-center">
+
+    <div class="row">
+      <div class="col-12 mb-5">
+        <h4><strong>Mes Cryptos</strong></h4>
+      </div>
     </div>
-</li>
+
+    <div class="row" *ngFor="let balance of crypto">
+        <div class="offset-xl-1 col-xl-10 col-12 mb-5">
+          <div class="row">
+            <div class="col-10">
+              <div class="card">
+                <div class="list-group-item">
+                    <h2>{{ balance.name }}</h2>
+                    <img style="width: 12%; text-align: left;" src="{{ balance.image.large }}">
+                    <div id="crypto_infos" style="font-size: 1.5vw;">
+                        <p id="price"> One {{ balance.name }} costs : {{ balance.market_data.current_price.eur }} €</p><br>
+                        <p id="price_variation_24h" style="color: red;" *ngIf="balance.price_change_24h < 0">{{ balance.name }} lost {{ balance.price_change_24h }}</p>
+                        <p id="price_variation_24h" style="color: green;" *ngIf="balance.price_change_24h > 0">{{ balance.name }} gained {{ balance.price_change_24h }}</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>
