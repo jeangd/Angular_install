@@ -1,5 +1,5 @@
 # Angular
-###### ```./install/ubuntu_install_angular.sh``` to update and upgrade, install nmp, angular, angular-lz-string:
+###### ```./install/ubuntu_install_angular.sh``` to update and upgrade, install npm, angular, angular-lz-string:
 ######
 ###### To create an Angular Project: ```ng new Project_Name```
 ###### ```npm install rxjs-compat --save```
